@@ -7,5 +7,5 @@
 ###### But everything will be changed by our application. The senior people only need to have a mobile phone with our application installed, then his relatives can track his position at any time. He can also call for help by click the emergency button which shown on screen all the time. The application can also provide some basic information for helpers who come to save the old man in danger. If he feels bored, he can ask the application to play music or opera even radio program for him.  
 ###### In a word, our application will keep caring the elder user all the time, as its name "iCare". 
 ##### Audience description  
-###### Old people, over 60 years old (or living alone but needs caring all the time) and his/her relatives.
+###### Old people, especially over 60 years old (or living alone but needs caring all the time) and his/her relatives.
 Both the elder and his relatives have to register for their own accounts. They need to match with each other. Different kind of function will be provided depends on the role of user (elder or descendant)  
