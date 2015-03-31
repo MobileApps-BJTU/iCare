@@ -50,19 +50,20 @@ public class MainActivity extends ActivityGroup {
     }
 
 
-    @Override
+    /*@Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
-            if (event.getAction() == KeyEvent.ACTION_DOWN && event.getRepeatCount() == 0) {
+            if (event.getAction() == KeyEvent.ACTION_DOWN
+                    && event.getRepeatCount() == 0) {
                 // 创建退出对话框
                 AlertDialog isExit = new AlertDialog.Builder(this).create();
                 // 设置对话框标题
-                isExit.setTitle("系统提示");
+                isExit.setTitle(getString(R.string.systemInfo));
                 // 设置对话框消息
-                isExit.setMessage("确定要退出吗");
+                isExit.setMessage(getString(R.string.verification));
                 // 添加选择按钮并注册监听
-                isExit.setButton("确定", listener);
-                isExit.setButton2("取消", listener);
+                isExit.setButton(getString(R.string.yes), listener);
+                isExit.setButton2(getString(R.string.no), listener);
                 // 显示对话框
                 isExit.show();
             }
@@ -83,5 +84,5 @@ public class MainActivity extends ActivityGroup {
                     break;
             }
         }
-    };
+    };*/
 }

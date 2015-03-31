@@ -1,4 +1,4 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
@@ -6,8 +6,10 @@
              android:background="@color/background">
 
     <!-- TODO: Update blank fragment layout -->
-
-
+<RelativeLayout
+    android:id="@+id/titleBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/Profile"
         android:text="@string/fragment_profile_profile"
@@ -18,6 +20,26 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
+    <!--<TextView
+        android:id="@+id/Back"
+        android:text="Back"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/normal_title_color"
+        android:background="@color/normal_title_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_below="@+id/titleBar"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -26,14 +48,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_name"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewName"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sample"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewName1"
             android:layout_column="0" />
     </TableRow>
@@ -42,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
             android:id="@+id/textViewPhoto"
             android:layout_column="0" />
 
@@ -58,14 +82,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_gender"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewGender"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewGender1"
             android:layout_column="0" />
     </TableRow>
@@ -74,14 +100,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_dob"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewDOB"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1950.10.31"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewDOB1"
             android:layout_column="0" />
     </TableRow>
@@ -90,14 +118,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_address"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewAddress"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3# Shangyuancun"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewAddress1"
             android:layout_column="0" />
     </TableRow>
@@ -106,14 +136,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_em1"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewContacts"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="18812345678"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewContacts1"
             android:layout_column="0" />
     </TableRow>
@@ -122,14 +154,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_em2"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewContacts2"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="17887654321"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewContacts12"
             android:layout_column="0" />
     </TableRow>
@@ -138,14 +172,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_mc"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewMedicalRecord"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hypertension"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewMedicalRecord1"
             android:layout_column="0" />
     </TableRow>
@@ -154,16 +190,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_profile_aller"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewAllergy"
             android:layout_column="0" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Penicillin"
-            android:textSize="15dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/normal_text_color"
             android:id="@+id/textViewAllergy1"
             android:layout_column="0" />
     </TableRow>
-
 </TableLayout>
+    </RelativeLayout>

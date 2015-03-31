@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Care</string>
 
-    <string name="hello_world">你好!</string>
-    <string name="action_settings">设置</string>
-    <string name="title_activity_me">个人</string>
-    <string name="title_activity_discovery">发现</string>
-    <string name="title_activity_base">基本</string>
-    <string name="title_activity_ring">报警</string>
-    <string name="title_activity_contacts">联系人</string>
-    <string name="title_activity_plan">备忘</string>
+    <string name="family1">妈妈</string>
+    <string name="family2">爸爸</string>
+    <string name="family3">亲爱的</string>
+    <string name="family4">小宝贝</string>
 
-    <string name="chat_way_1">发短信</string>
-    <string name="chat_way_2">语音聊天</string>
+    <string name="chat_way_1">信息</string>
+    <string name="chat_way_2">语音</string>
     <string name="chat_way_3">视频通话</string>
 
-    <string name="me">个人中心</string>
+    <string name="systemInfo">系统提示</string>
+    <string name="verification">确定退出程序</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="discovery_moments">朋友圈</string>
+    <string name="discovery_neighbors">附近的人</string>
+    <string name="discovery_scan">扫一扫</string>
+    <string name="discovery_entertainment">娱乐</string>
+
+    <string name="me">我</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_profile">个人资料</string>
     <string name="title_activity_register">注册</string>
     <string name="title_activity_main">主页面</string>
 
-    <string name="discovery_moments">状态</string>
-    <string name="discovery_neighbors">邻居</string>
-    <string name="discovery_scan">扫描</string>
-    <string name="discovery_entertainment">娱乐</string>
     <string name="title_activity_moments">状态</string>
     <string name="title_activity_locate">定位</string>
     <string name="title_activity_text">发短信</string>
@@ -72,4 +72,10 @@
     <string name="fragment_profile_em2">紧急联系人2</string>
     <string name="fragment_profile_mc">病史</string>
     <string name="fragment_profile_aller">过敏史</string>
+
+    <string name="choose">请选择</string>
+    <string name="list_detail">详情</string>
+    <string name="list_chat">通话</string>
+    <string name="list_locate">定位</string>
+    <string name="ring_title">紧急通话</string>
 </resources>

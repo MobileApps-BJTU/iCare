@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,14 +44,17 @@ public class Contacts extends BaseActivity {
             "5556",
             "18811442222",
             "13922520154",
-            "15268545859",
+            "15268545859"
     };
 
+/*
+    private String family1 =  getString(R.string.family1);
+    private String family2 =  getString(R.string.family2);
+    private String family3 =  getString(R.string.family3);
+    private String family4 =  getString(R.string.family4);
+*/
     private String[] nameArray = {
-            "Mom",
-            "Dad",
-            "Honey",
-            "Baby"
+            "Mon","Dad","Honey","Baby"
     };
 
     public void onCreate(Bundle savedInstanceState) {
@@ -172,7 +176,7 @@ public class Contacts extends BaseActivity {
                     };
 
                     new AlertDialog.Builder(Contacts.this)
-                            .setTitle("Please choose:")
+                            .setTitle(getString(R.string.choose))
                             .setItems(items, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int item) {
                                     switch (item) {
@@ -243,4 +247,39 @@ public class Contacts extends BaseActivity {
     }
 
 
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
+            if (event.getAction() == KeyEvent.ACTION_DOWN
+                    && event.getRepeatCount() == 0) {
+                // 创建退出对话框
+                AlertDialog isExit = new AlertDialog.Builder(this).create();
+                // 设置对话框标题
+                isExit.setTitle(getString(R.string.systemInfo));
+                // 设置对话框消息
+                isExit.setMessage(getString(R.string.verification));
+                // 添加选择按钮并注册监听
+                isExit.setButton(getString(R.string.yes), listener);
+                isExit.setButton2(getString(R.string.no), listener);
+                // 显示对话框
+                isExit.show();
+            }
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+    DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int which) {
+            switch (which) {
+                case AlertDialog.BUTTON_POSITIVE:// "确认"按钮退出程序
+                    System.exit(0);
+                    break;
+                case AlertDialog.BUTTON_NEGATIVE:// "取消"第二个按钮取消对话框
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 }

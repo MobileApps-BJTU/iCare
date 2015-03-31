@@ -42,7 +42,7 @@ public class Ring extends Fragment{
                        public void onClick(View v) {
                           final String[] items = {"110","119","120"};
                           new AlertDialog.Builder(getActivity())
-                                  .setTitle("Emergency")
+                                  .setTitle(getString(R.string.ring_title))
                                   .setItems(items, new DialogInterface.OnClickListener() {
                                       public void onClick(DialogInterface dialog, int item) {
                                           switch (item) {
