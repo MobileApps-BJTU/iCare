@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default" >
+
+    <TextView
+        android:id="@+id/TextTitle"
+        android:gravity="center"
+        android:textSize="@dimen/normal_title_size"
+        android:textColor="@color/normal_title_color"
+        android:background="@color/normal_title_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_footer_bg" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:text="Send"
+            android:background="@drawable/shape_send" />
+
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textSize="@dimen/msg_text_size"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/TextTitle"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="4dp"
+        android:stackFromBottom="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="#0000"/>
+
+    <RelativeLayout
+        android:id="@+id/ring_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/ring_size"
+        android:layout_height="@dimen/ring_size"/>
+
+</RelativeLayout>

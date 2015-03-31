@@ -2,9 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.n56.care" >
 
+    <uses-permission android:name="android.permission.CALL_PHONE">
+    </uses-permission>
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/care"
         android:label="@string/app_name"
         android:theme="@style/theme_fullScreen" >
         <activity
@@ -39,6 +42,26 @@
         <activity
             android:name=".View.MainActivity"
             android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".View.Moments"
+            android:label="@string/title_activity_moments" >
+        </activity>
+        <activity
+            android:name=".View.Locate"
+            android:label="@string/title_activity_locate" >
+        </activity>
+        <activity
+            android:name=".View.Text"
+            android:label="@string/title_activity_text" >
+        </activity>
+        <activity
+            android:name=".View.Talk"
+            android:label="@string/title_activity_talk" >
+        </activity>
+        <activity
+            android:name=".View.VideoTalk"
+            android:label="@string/title_activity_video_talk" >
         </activity>
     </application>
 

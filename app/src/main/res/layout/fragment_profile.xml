@@ -1,13 +1,169 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.example.n56.care.View.Profile">
+             tools:context="com.example.n56.care.View.Profile"
+             android:background="@color/background">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/Profile"
+        android:text="Profile"
+        android:gravity="center"
+        android:textSize="@dimen/normal_title_size"
+        android:textColor="@color/normal_title_color"
+        android:background="@color/normal_title_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="15dp"
+            android:id="@+id/textViewName"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:textSize="15dp"
+            android:id="@+id/textViewName1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:id="@+id/textViewPhoto"
+            android:layout_column="0" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="120dp"
+            android:background="@drawable/care"
+            android:id="@+id/imageViewOld"
+            android:layout_column="1" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="15dp"
+            android:id="@+id/textViewGender"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="15dp"
+            android:id="@+id/textViewGender1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth:"
+            android:textSize="15dp"
+            android:id="@+id/textViewDOB"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1950.10.31"
+            android:textSize="15dp"
+            android:id="@+id/textViewDOB1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Address:"
+            android:textSize="15dp"
+            android:id="@+id/textViewAddress"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3# Shangyuancun"
+            android:textSize="15dp"
+            android:id="@+id/textViewAddress1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact 1:"
+            android:textSize="15dp"
+            android:id="@+id/textViewContacts"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18812345678"
+            android:textSize="15dp"
+            android:id="@+id/textViewContacts1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact 2:"
+            android:textSize="15dp"
+            android:id="@+id/textViewContacts2"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17887654321"
+            android:textSize="15dp"
+            android:id="@+id/textViewContacts12"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Record:"
+            android:textSize="15dp"
+            android:id="@+id/textViewMedicalRecord"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hypertension"
+            android:textSize="15dp"
+            android:id="@+id/textViewMedicalRecord1"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy:"
+            android:textSize="15dp"
+            android:id="@+id/textViewAllergy"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penicillin"
+            android:textSize="15dp"
+            android:id="@+id/textViewAllergy1"
+            android:layout_column="0" />
+    </TableRow>
+
+</TableLayout>

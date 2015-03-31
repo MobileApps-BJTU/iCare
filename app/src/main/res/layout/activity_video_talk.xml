@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_background"
+                tools:context="com.example.n56.care.View.VideoTalk">
+
+    <TextView
+        android:id="@+id/VideoTalkTitle"
+        android:gravity="center"
+        android:textSize="@dimen/normal_title_size"
+        android:textColor="@color/normal_title_color"
+        android:background="@color/normal_title_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <com.example.n56.care.Util.GifMovieView
+        android:id="@+id/VideoTalkHead"
+        android:layout_below="@+id/VideoTalkTitle"
+        android:layout_above="@+id/videoSeekBar"
+        android:background="@drawable/default_head"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="304dp"/>
+        />
+
+    <com.example.n56.care.Util.GifMovieView
+        android:id="@+id/VideoTalkMe"
+        android:layout_below="@+id/VideoTalkTitle"
+        android:background="@drawable/default_head"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/video_me_size"
+        android:layout_height="@dimen/video_me_size"/>
+    />
+
+    <SeekBar
+        android:id="@+id/videoSeekBar"
+        android:layout_above="@+id/bottom"
+        android:layout_marginTop="10dp"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:thumb="@drawable/thumb_normal"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/videoVolumeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/videoVolume"
+            android:text="Volume:"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/videoVolumeText"
+            android:layout_toRightOf="@+id/videoVolume"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <ImageButton
+            android:layout_below="@+id/videoVolumeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/handoff"
+            android:layout_width="@dimen/x_icon_size"
+            android:layout_height="@dimen/x_icon_size"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ring_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/ring_size"
+        android:layout_height="@dimen/ring_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_background"
+                tools:context="com.example.n56.care.View.Talk">
+
+    <TextView
+        android:id="@+id/TalkTitle"
+        android:gravity="center"
+        android:textSize="@dimen/normal_title_size"
+        android:textColor="@color/normal_title_color"
+        android:background="@color/normal_title_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/TalkHead"
+        android:layout_below="@+id/TalkTitle"
+        android:background="@drawable/default_head"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="304dp"/>
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_below="@+id/TalkHead"
+        android:layout_marginTop="10dp"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:thumb="@drawable/thumb_normal"
+        />
+
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/freehand"
+        android:layout_width="@dimen/x_icon_size"
+        android:layout_height="@dimen/x_icon_size"/>
+
+    <TextView
+        android:id="@+id/Volume"
+        android:layout_centerHorizontal="true"
+        android:text="Volume:"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/VolumeText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Volume"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/handoff"
+        android:layout_width="@dimen/x_icon_size"
+        android:layout_height="@dimen/x_icon_size"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ring_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/ring_size"
+        android:layout_height="@dimen/ring_size"/>
+
+</RelativeLayout>

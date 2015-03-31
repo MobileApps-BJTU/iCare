@@ -23,6 +23,7 @@ public class LineEditText extends EditText {
         // TODO Auto-generated constructor stub
         mPaint = new Paint();
         mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(2);
         mPaint.setColor(Color.parseColor("#ff7c66"));
     }
 

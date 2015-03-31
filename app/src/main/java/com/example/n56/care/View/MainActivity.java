@@ -24,6 +24,8 @@ public class MainActivity extends ActivityGroup {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         tabHost=(TabHost)findViewById(android.R.id.tabhost);	//获取TabHost对象
         tabHost.setup();	//初始化TabHost组件
         tabHost.setup(this.getLocalActivityManager());
@@ -40,6 +42,11 @@ public class MainActivity extends ActivityGroup {
         tabHost.addTab(tabHost.newTabSpec("tab04")
                 .setIndicator("Me")
                 .setContent(new Intent(MainActivity.this,Me.class)));  	//添加第四个标签页
+
+        getFragmentManager()
+                .beginTransaction()
+                .add(R.id.ring_holder, new Ring())
+                .commit();
     }
 
 

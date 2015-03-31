@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="flat_text_color">#fff</color>
+
+    <color name="normal_text_color">#ce36282a</color>
+    <color name="normal_background">#fffafffb</color>
+    <color name="background">#fff</color>
+    <color name="normal_title_background">#d000020a</color>
+    <color name="normal_title_color">#fff</color>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <!-- 定义当button 处于pressed 状态时的形态。-->
+        <shape>
+            <gradient android:startColor="#ff31aeff" />
+
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="false">
+        <!-- 定义当button没有获得focus时的形态-->
+        <shape>
+            <gradient android:startColor="#ff24b2ff"
+                      android:endColor="#ff5fb9ff"/>
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/locate_map"
+                tools:context="com.example.n56.care.View.Locate">
+
+    <RelativeLayout
+        android:id="@+id/ring_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/ring_size"
+        android:layout_height="@dimen/ring_size"/>
+</RelativeLayout>
