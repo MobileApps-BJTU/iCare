@@ -42,7 +42,7 @@ public class MainActivity extends ActivityGroup {
                 .setContent(new Intent(MainActivity.this,Me.class)));  	//添加第四个标签页
     }
 
-
+/*
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
@@ -77,4 +77,5 @@ public class MainActivity extends ActivityGroup {
             }
         }
     };
+    */
 }
