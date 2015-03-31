@@ -49,7 +49,7 @@ public class MainActivity extends ActivityGroup {
                 .commit();
     }
 
-
+/*
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
@@ -84,4 +84,5 @@ public class MainActivity extends ActivityGroup {
             }
         }
     };
+    */
 }

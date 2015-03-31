@@ -3,11 +3,16 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="com.example.n56.care.View.Profile"
+<<<<<<< HEAD
              android:background="@color/background">
+=======
+             android:background="#ffffce9b">
+>>>>>>> origin/prototype
 
     <!-- TODO: Update blank fragment layout -->
 
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/Profile"
         android:text="Profile"
@@ -18,6 +23,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
+=======
+>>>>>>> origin/prototype
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -49,7 +56,11 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="120dp"
+<<<<<<< HEAD
             android:background="@drawable/care"
+=======
+            android:background="@drawable/old"
+>>>>>>> origin/prototype
             android:id="@+id/imageViewOld"
             android:layout_column="1" />
     </TableRow>
