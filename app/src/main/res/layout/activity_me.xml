@@ -6,11 +6,130 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.example.n56.care.View.Me">
+                android:background="#ffffce9b"
+                tools:context="com.example.n56.care.View.Me"
+                android:id="@+id/me">
 
-    <TextView
-        android:text="Me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Lin1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="Profile"
+            android:gravity="center_vertical|left"
+            android:textSize="20dp"
+            android:id="@+id/textView" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:id="@+id/button"
+            android:text="Edit"
+            android:layout_gravity="center_vertical|right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/Lin2"
+        android:layout_below="@+id/Lin1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="Push"
+            android:gravity="center_vertical|left"
+            android:textSize="20dp"
+            android:id="@+id/textView2" />
+
+        <Switch
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:id="@+id/switch1"
+            android:textOff="Off"
+            android:textOn="On"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/Lin3"
+        android:layout_below="@+id/Lin2"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="Location"
+            android:gravity="center_vertical|left"
+            android:textSize="20dp"
+            android:id="@+id/textView3" />
+
+        <Switch
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:id="@+id/switch2"
+            android:textOff="Off"
+            android:textOn="On"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/Lin4"
+        android:layout_below="@+id/Lin3">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/Lin5"
+        android:layout_below="@+id/Lin4"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/button2"
+            android:text="Log out"
+
+            />
+    </LinearLayout>
 </RelativeLayout>
