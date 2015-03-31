@@ -65,7 +65,7 @@
 
         <TextView
             android:id="@+id/videoVolume"
-            android:text="Volume:"
+            android:text="@string/activity_videotalk_volume"
             android:textColor="@color/normal_text_color"
             android:textSize="@dimen/normal_text_size"
             android:layout_width="wrap_content"

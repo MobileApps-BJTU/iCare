@@ -6,7 +6,7 @@
                 tools:context="com.example.n56.care.View.Discovery">
     <TextView
         android:id="@+id/ContactsTitle"
-        android:text="Contacts"
+        android:text="@string/activity_contacts_contacts"
         android:gravity="center"
         android:textSize="@dimen/normal_title_size"
         android:textColor="@color/normal_title_color"
@@ -34,7 +34,7 @@
             android:layout_toRightOf="@+id/button_add"
             android:textSize="@dimen/large_text_size"
             android:textColor="@color/normal_text_color"
-            android:text="Add"
+            android:text="@string/activity_contacts_add"
             />
         </RelativeLayout>
 

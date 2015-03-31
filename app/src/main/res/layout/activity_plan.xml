@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/Plan"
-        android:text="Plan"
+        android:text="@string/activity_plan_1"
         android:gravity="center"
         android:textSize="@dimen/normal_title_size"
         android:textColor="@color/normal_title_color"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:text="Plan"
+        android:text="@string/activity_plan_2"
         android:layout_centerInParent="true"
         android:textSize="@dimen/normal_text_size"
         android:textColor="@color/normal_text_color"

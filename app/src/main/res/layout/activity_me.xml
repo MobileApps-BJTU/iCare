@@ -2,30 +2,19 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:background="@color/background"
                 tools:context="com.example.n56.care.View.Me"
                 android:id="@+id/me">
 
     <TextView
         android:id="@+id/Me"
-        android:text="Me"
+        android:text="@string/activity_me_me"
         android:gravity="center"
         android:textSize="@dimen/normal_title_size"
         android:textColor="@color/normal_title_color"
         android:background="@color/normal_title_background"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
-=======
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:background="#ffffce9b"
-                tools:context="com.example.n56.care.View.Me"
-                android:id="@+id/me">
-
->>>>>>> origin/prototype
 
     <LinearLayout
         android:orientation="horizontal"
@@ -45,7 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="4"
-            android:text="Profile"
+            android:text="@string/activity_me_profile"
             android:gravity="center_vertical|left"
             android:textSize="20dp"
             android:id="@+id/textView" />
@@ -55,7 +44,7 @@
             android:layout_height="40dp"
             android:layout_weight="2"
             android:id="@+id/button"
-            android:text="Edit"
+            android:text="@string/activity_me_edit"
             android:layout_gravity="center_vertical|right"/>
     </LinearLayout>
 
@@ -76,7 +65,7 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="4"
-            android:text="Push"
+            android:text="@string/activity_me_push"
             android:gravity="center_vertical|left"
             android:textSize="20dp"
             android:id="@+id/textView2" />
@@ -110,7 +99,7 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="4"
-            android:text="Location"
+            android:text="@string/activity_me_location"
             android:gravity="center_vertical|left"
             android:textSize="20dp"
             android:id="@+id/textView3" />
@@ -144,8 +133,7 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:id="@+id/button2"
-            android:text="Log out"
-
+            android:text="@string/activity_me_logout"
             />
     </LinearLayout>
 </RelativeLayout>

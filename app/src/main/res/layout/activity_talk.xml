@@ -50,7 +50,7 @@
     <TextView
         android:id="@+id/Volume"
         android:layout_centerHorizontal="true"
-        android:text="Volume:"
+        android:text="@string/activity_talk_volume"
         android:textColor="@color/normal_text_color"
         android:textSize="@dimen/normal_text_size"
         android:layout_width="wrap_content"

@@ -6,7 +6,7 @@
                 tools:context="com.example.n56.care.View.Discovery">
     <TextView
         android:id="@+id/DiscoveryTitle"
-        android:text="Discovery"
+        android:text="@string/activity_discovery_discovery"
         android:gravity="center"
         android:textSize="@dimen/normal_title_size"
         android:textColor="@color/normal_title_color"

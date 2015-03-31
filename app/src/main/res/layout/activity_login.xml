@@ -34,7 +34,7 @@
 
         <com.example.n56.care.Component.LineEditText
             android:id="@+id/phoneNumberEditText"
-            android:hint="Phone Number"
+            android:hint="@string/activity_login_hint_phone"
             android:textCursorDrawable="@null"
             android:textSize="28sp"
             android:textColor="@color/normal_text_color"
@@ -48,7 +48,7 @@
     <com.example.n56.care.Component.LineEditText
         android:inputType="textPassword"
         android:id="@+id/passwordEditText"
-        android:hint="Password"
+        android:hint="@string/activity_login_hint_password"
         android:textCursorDrawable="@null"
         android:textColor="@color/normal_text_color"
         android:textSize="@dimen/normal_text_size"
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/loginButton"
         android:layout_centerHorizontal="true"
-        android:text="Login"
+        android:text="@string/activity_login_login"
         android:textSize="@dimen/normal_text_size"
         android:textColor="#ffff5344"
         android:typeface = "sans"
@@ -80,7 +80,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="6dp"
         android:textSize="22sp"
-        android:text="New account >>"
+        android:text="@string/activity_login_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

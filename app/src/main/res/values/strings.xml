@@ -31,4 +31,45 @@
     <string name="title_activity_text">Text</string>
     <string name="title_activity_talk">Talk</string>
     <string name="title_activity_video_talk">VideoTalk</string>
+
+    <string name="activity_contacts_contacts">Contects</string>
+    <string name="activity_contacts_add">Add</string>
+
+    <string name="activity_discovery_discovery">Discovery</string>
+
+    <string name="activity_login_hint_phone">Phone Number</string>
+    <string name="activity_login_hint_password">Password</string>
+    <string name="activity_login_login">Login</string>
+    <string name="activity_login_new">New Account>></string>
+
+    <string name="activity_me_me">Me</string>
+    <string name="activity_me_profile">Profile</string>
+    <string name="activity_me_edit">Edit</string>
+    <string name="activity_me_push">Push</string>
+    <string name="activity_me_location">Location</string>
+    <string name="activity_me_logout">Log out</string>
+
+    <string name="activity_moments">Moments</string>
+
+    <string name="activity_plan_1">Plan</string>
+    <string name="activity_plan_2">Plan</string>
+
+    <string name="activity_register_1">Register</string>
+
+    <string name="activity_talk_volume">Volume:</string>
+
+    <string name="activity_text_send">Send</string>
+
+    <string name="activity_videotalk_volume">Volume:</string>
+
+    <string name="fragment_profile_profile">Personal Profile</string>
+    <string name="fragment_profile_name">Name</string>
+    <string name="fragment_profile_gender">Gender</string>
+    <string name="fragment_profile_dob">Date of Birth</string>
+    <string name="fragment_profile_address">Home Address</string>
+    <string name="fragment_profile_em1">Emergency Comtact 1</string>
+    <string name="fragment_profile_em2">Emergency Comtact 2</string>
+    <string name="fragment_profile_mc">Medical Record</string>
+    <string name="fragment_profile_aller">Allergy</string>
+
 </resources>
